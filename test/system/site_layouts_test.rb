@@ -19,17 +19,17 @@ class SiteLayoutsTest < ApplicationSystemTestCase
     assert_no_selector "a", text: t("layouts.application.sign_out")
   end
 
-  # test "ログインしている時、ヘッダーにログアウトリンクが表示される" do
-  #   sign_in @user # Deviseヘルパーを使って、テスト内でログインさせます
+  test "ログインしている時、ヘッダーにログアウトリンクが表示される" do
+    sign_in @user # Deviseヘルパーを使って、テスト内でログインさせます
 
-  #   visit root_url # トップページにアクセス
+    # visit root_url # トップページにアクセス
 
-  #   # "ログアウト"というテキストを持つ<a>タグがあることを確認
-  #   assert_selector "a", text: "sign out"
-  #   assert_no_selector "a", text: "新規登録"
-  #   assert_no_selector "a", text: "ログイン"
+    # # "ログアウト"というテキストを持つ<a>タグがあることを確認
+    # assert_selector "a", text: "sign out"
+    # assert_no_selector "a", text: "新規登録"
+    # assert_no_selector "a", text: "ログイン"
 
-  #   # ログインしているユーザーのメールアドレスが表示されていることを確認
-  #   assert_text @user.email
-  # end
+    # # ログインしているユーザーのメールアドレスが表示されていることを確認
+    # assert_text @user.email
+  end
 end
