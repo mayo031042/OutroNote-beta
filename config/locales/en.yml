@@ -29,3 +29,8 @@
 
 en:
   hello: "Hello world"
+  layouts:
+    application:
+      sign_up: "sign up"
+      sign_in: "sign_in"
+      sign_out: "sign_out"

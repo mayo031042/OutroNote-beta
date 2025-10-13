@@ -13,10 +13,10 @@ class SiteLayoutsTest < ApplicationSystemTestCase
     visit root_url # トップページにアクセス
 
     # "sign up"というテキストを持つ<a>タグがあることを確認
-    assert_selector "a", text: "sign up"
-    assert_selector "a", text: "sign in"
-    # # "ログアウト"というテキストを持つ<a>タグがないことを確認
-    assert_no_selector "a", text: "sign out"
+    assert_selector "a", text: t("layouts.application.sign_up")
+    assert_selector "a", text: t("layouts.application.sign_in")
+    # "ログアウト"というテキストを持つ<a>タグがないことを確認
+    assert_no_selector "a", text: t("layouts.application.sign_out")
   end
 
   # test "ログインしている時、ヘッダーにログアウトリンクが表示される" do
