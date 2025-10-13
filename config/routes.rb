@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get "secrets/index"
   root "home#index"
 
+  get "secrets/index"
   get "home/index"
   devise_for :users
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
